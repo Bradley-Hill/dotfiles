@@ -1,0 +1,7 @@
+# ~/.zsh_functions
+
+prettycurl() {
+  echo "➡  Request: curl $@"
+  echo "⬅  Response:"
+  curl -s "$@" | jq
+}

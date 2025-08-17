@@ -1,0 +1,30 @@
+# git aliases
+alias ga="git add ."
+alias gpush="git push"
+alias gc="git commit -m"
+alias gb="git branch"
+alias st="git status"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias woops="git commit --amend --no-edit"
+alias gcheck="git checkout"
+alias gbnew="git checkout -b"
+
+# system commands
+alias update="pamac update --no-confirm --aur"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias please="sudo !!"     # Repeat last command with sudo
+alias clr="clear"
+alias hist="history"
+alias md="mkdir -p"
+alias l="ls -lh"
+alias la="ls -lAh"
+
+# navigation helpers
+alias home="cd ~"
+alias download="cd ~/Downloads"
+alias repos="cd ~/Repos"
+alias docs="cd ~/Documents"
+
+#
