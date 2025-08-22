@@ -8,6 +8,7 @@ alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 alias woops="git commit --amend --no-edit"
 alias gcheck="git checkout"
 alias gbnew="git checkout -b"
+alias gpull="git pull"
 
 # system commands
 alias update="pamac update --no-confirm --aur"
