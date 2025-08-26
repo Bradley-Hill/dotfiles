@@ -38,8 +38,8 @@ fi
 echo "Setting up dotfiles..."
 
 for file in $FILES; do
-    target="$HOME/zsh/$file"
-    source="$DOTFILES_DIR/$file"
+    target="$HOME$file"
+    source="$DOTFILES_DIR/zsh/$file"
 
     # If target is a symlink pointing elsewhere or missing, recreate it
     if [ -L "$target" ]; then
