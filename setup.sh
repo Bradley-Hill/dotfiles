@@ -38,7 +38,7 @@ fi
 echo "Setting up dotfiles..."
 
 for file in $FILES; do
-    target="$HOME$file"
+    target="$HOME/$file"
     source="$DOTFILES_DIR/zsh/$file"
 
     # If target is a symlink pointing elsewhere or missing, recreate it
@@ -75,7 +75,4 @@ if [ "$SHELL" != "$(which zsh)" ]; then
     chsh -s "$(which zsh)"
 fi
 
-echo "Sourcing .zshrc..."
-source "$HOME/.zshrc"
-
-echo "Dotfiles setup complete! Please restart your terminal to use Zsh as your default shell."
+echo "Dotfiles setup complete! Restart your terminal or run 'exec zsh' to start using it."
