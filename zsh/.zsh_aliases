@@ -1,5 +1,6 @@
 # git aliases
-alias ga="git add ."
+alias ga="git add -p"
+alias gall="git add ."
 alias gpush="git push"
 alias gc="git commit -m"
 alias gb="git branch"
@@ -9,13 +10,15 @@ alias woops="git commit --amend --no-edit"
 alias gcheck="git checkout"
 alias gbnew="git checkout -b"
 alias gpull="git pull"
+alias grebase="git rebase -i"
 
 # system commands
-alias update="pamac update --no-confirm --aur"
+alias update="sudo apt update && sudo apt upgrade -y"
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias please="sudo !!"     # Repeat last command with sudo
+#Repeat previous command with sudo
+alias please='sudo !!'
 alias clr="clear"
 alias hist="history"
 alias md="mkdir -p"
